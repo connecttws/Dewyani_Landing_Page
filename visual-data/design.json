@@ -1,0 +1,38 @@
+{
+  "colors": {
+    "primary": {
+      "sky500": "#0EA5E9",
+      "sky600": "#0284C7",
+      "sky700": "#0369A1",
+      "blue600": "#2563EB"
+    },
+    "secondary": {
+      "forestGreen": "#10372B",
+      "leafAccent": "#1B4D3E",
+      "emerald": "#10B981"
+    },
+    "neutral": {
+      "slate50": "#F8FAFC",
+      "slate100": "#F1F5F9",
+      "slate200": "#E2E8F0",
+      "slate700": "#334155",
+      "slate800": "#1E293B",
+      "slate900": "#0F172A",
+      "darkBg": "#0D1117"
+    },
+    "accent": {
+      "amber400": "#FBBF24",
+      "rose500": "#F43F5E"
+    }
+  },
+  "fonts": {
+    "body": "Plus Jakarta Sans, system-ui, sans-serif",
+    "heading": "Plus Jakarta Sans, system-ui, sans-serif"
+  },
+  "components": {
+    "buttonPrimary": "bg-gradient-to-r from-sky-500 via-sky-600 to-blue-600 hover:from-sky-400 hover:to-blue-500 text-white font-extrabold rounded-xl shadow-lg",
+    "buttonWarning": "bg-amber-400 hover:bg-amber-300 text-slate-950 font-extrabold rounded-md shadow-xs",
+    "cardDark": "bg-[#0d1117] text-white rounded-2xl border border-slate-800 shadow-md",
+    "cardLight": "bg-white text-slate-900 rounded-2xl border border-slate-200 shadow-xs"
+  }
+}

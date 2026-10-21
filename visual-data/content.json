@@ -1,0 +1,187 @@
+{
+  "header": {
+    "announcement": {
+      "badge": "LIVE ONLINE WEBINAR",
+      "date": "This Sunday, 7:00 PM IST",
+      "urgency": "Limited to 50 Seats",
+      "cta": "Book Now"
+    },
+    "brand": {
+      "title": "METABOLIC ACADEMY",
+      "subtitle": "Personalised Nutrition & Wellness",
+      "tagline": "Real Food. Sustainable Habits. Better Health."
+    },
+    "cta": {
+      "text": "Book Your Seat",
+      "price": 99
+    }
+  },
+  "hero": {
+    "headline": "Mastering Diabetes: A Practical Guide to Healthy Living",
+    "video": {
+      "title": "Webinar Preview",
+      "host": "Dt. Devyani Arbat",
+      "duration": "1:45 Preview",
+      "thumbnail": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1600&q=80"
+    },
+    "promises": [
+      "No Extreme Starvation or Restrictive Crash Diets",
+      "Understand Real Root Causes of Insulin Resistance",
+      "Personalised Habit Building Tailored to Your Routine"
+    ],
+    "cta": {
+      "text": "Book Your Seat Now",
+      "subtext": "Limited to First 50 Attendees",
+      "price": 99,
+      "originalPrice": 1499
+    },
+    "subheading": "Build healthier everyday habits with personalised nutrition and lifestyle guidance designed around your individual needs, food preferences, and routine."
+  },
+  "struggles": {
+    "tag": "EVERYDAY CHALLENGES",
+    "title": "Are You Experiencing Any of These Everyday Health Challenges?",
+    "subtitle": "Managing diabetes can often feel overwhelming, but small, consistent shifts can lead to meaningful long-term change.",
+    "cards": [
+      {
+        "title": "Blood Sugar Fluctuations",
+        "description": "Finding it difficult to understand what affects your blood sugar levels and how daily food choices play a role?",
+        "image": "https://images.unsplash.com/photo-1628771065518-0d82f1938462?auto=format&fit=crop&w=800&q=80"
+      },
+      {
+        "title": "Difficulty Managing Weight",
+        "description": "Trying to manage your weight but struggling to find an approach that fits your lifestyle?",
+        "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=800&q=80"
+      },
+      {
+        "title": "Confusion About What to Eat",
+        "description": "Getting conflicting diet advice and wondering which foods and portions are right for you?",
+        "image": "https://images.unsplash.com/photo-1505253716362-afaea1d3d1af?auto=format&fit=crop&w=800&q=80"
+      },
+      {
+        "title": "Busy Schedule & Inconsistent Habits",
+        "description": "Finding it hard to maintain regular meals, physical activity, and a healthy sleep routine?",
+        "image": "https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=800&q=80"
+      }
+    ]
+  },
+  "curriculum": {
+    "title": "Discover a Smarter Approach to Nutrition & Diabetes Management",
+    "intro": "Join Dt. Dr. Devyani Arbat for an educational session designed to help you understand the connection between nutrition, daily habits, blood sugar, and overall well-being.",
+    "subtext": "By attending this webinar, you will learn how to:",
+    "points": [
+      "Make informed food choices that support blood sugar management.",
+      "Understand the role of balanced nutrition in healthy weight management.",
+      "Build realistic habits even with a busy schedule.",
+      "Understand how movement, stress, and sleep influence your health.",
+      "Approach weight management without extreme dieting or unnecessary food guilt.",
+      "Create a practical starting point for your personal health journey."
+    ],
+    "cta": "Join the Upcoming Masterclass"
+  },
+  "complications": {
+    "tag": "HEALTH EDUCATION",
+    "title": "High Blood Sugar Today Can Affect Your Health Tomorrow.",
+    "cards": [
+      {
+        "title": "Heart Health",
+        "detail": "Uncontrolled diabetes increases the risk of heart disease and stroke."
+      },
+      {
+        "title": "Kidney Damage",
+        "detail": "Persistently high blood sugar can damage the kidneys over time."
+      },
+      {
+        "title": "Vision Problems",
+        "detail": "Diabetes can damage the blood vessels in your eyes and affect your vision."
+      },
+      {
+        "title": "Nerve Damage",
+        "detail": "High blood sugar can cause nerve damage, tingling, numbness, or pain, especially in the feet."
+      },
+      {
+        "title": "Slow Wound Healing",
+        "detail": "Diabetes can make wounds and infections harder to manage."
+      },
+      {
+        "title": "Low Energy & Fatigue",
+        "detail": "When glucose cannot enter cells efficiently, it leaves you feeling chronically drained."
+      }
+    ]
+  },
+  "pillars": {
+    "tag": "CORE METHODOLOGY",
+    "title": "The 5 Pillars of the Metabolic Reset Blueprint",
+    "subtitle": "A science-backed holistic framework focused on root causes rather than temporary symptoms.",
+    "pillars": [
+      {
+        "number": "01",
+        "title": "Nutrition & Real Food",
+        "description": "Smart macro-sequencing, low-glycemic satiety, and zero extreme calorie cuts."
+      },
+      {
+        "number": "02",
+        "title": "Physical Movement",
+        "description": "Post-meal walks and resistance exercise to pull glucose into muscles without insulin spikes."
+      },
+      {
+        "number": "03",
+        "title": "Sleep & Circadian Rhythm",
+        "description": "Restorative sleep architecture to lower morning fasting cortisol and dawn phenomenon."
+      },
+      {
+        "number": "04",
+        "title": "Stress & Autonomic Balance",
+        "description": "Vagal tone activation to halt stress-induced hepatic glycogen dumping."
+      },
+      {
+        "number": "05",
+        "title": "Mindset & Consistency",
+        "description": "Sustainable habit stacking for lifelong metabolic health and medicine freedom."
+      }
+    ]
+  },
+  "guidance": {
+    "tag": "PRACTICAL & SUSTAINABLE",
+    "title": "Take Control of Your Daily Habits with the Right Guidance",
+    "cards": [
+      {
+        "title": "Personalised Nutrition",
+        "description": "No two metabolic profiles are identical. Learn to identify which specific foods elevate your personal glucose response."
+      },
+      {
+        "title": "Actionable Daily Steps",
+        "description": "Break down complex health concepts into small, doable habits you can implement starting day one."
+      },
+      {
+        "title": "Evidence-Based Guidance",
+        "description": "Cut through conflicting internet advice with verified medical and metabolic science."
+      }
+    ]
+  },
+  "doctor": {
+    "name": "Dt. Dewyani Arbat",
+    "experience": "10+ Years Experience",
+    "tagline": "Real Food. Sustainable Habits. Better Health.",
+    "intro": "Hi, I’m Dt. Devyani Arbat, with over 10 years of experience in fitness, nutrition, and holistic lifestyle management.",
+    "bio": "Her approach focuses on understanding insulin resistance, managing belly fat, and building healthier habits without extreme dieting or starvation. Through the Metabolic Reset Blueprint, she guides individuals towards a more balanced lifestyle with a focus on real food, personalised nutrition, and long-term well-being.",
+    "image": "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=800&q=80"
+  },
+  "faqs": [
+    {
+      "question": "Is this webinar suitable for pre-diabetic individuals?",
+      "answer": "Absolutely. Pre-diabetes is the golden window for reversal. The metabolic principles taught will help prevent progression to Type 2 diabetes."
+    },
+    {
+      "question": "Will I have to give up all carbohydrates and sweets?",
+      "answer": "No. Dt. Devyani teaches smart food sequencing and metabolic flexibility. You will learn how to pair foods naturally to prevent glucose spikes without feeling deprived."
+    },
+    {
+      "question": "Is this an interactive live session?",
+      "answer": "Yes, it is a live 90-minute masterclass followed by an interactive Q&A session where Dt. Devyani addresses attendee queries directly."
+    },
+    {
+      "question": "What happens after I complete my registration?",
+      "answer": "You will receive an instant confirmation via WhatsApp and email containing your personal Zoom live link, calendar invite, and preparatory guide."
+    }
+  ]
+}
