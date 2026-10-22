@@ -2,7 +2,6 @@
 
 import React, { useState, useEffect } from 'react';
 import { Sparkles, Clock, ChevronRight } from 'lucide-react';
-import { RupeeSymbol } from './RupeeSymbol';
 
 interface StickyBottomBarProps {
   onOpenBooking: () => void;
@@ -48,15 +47,6 @@ export const StickyBottomBar: React.FC<StickyBottomBarProps> = ({ onOpenBooking 
         </div>
 
         <div className="flex items-center gap-3 shrink-0">
-          <div className="hidden sm:flex flex-col text-right">
-            <span className="text-xs font-mono line-through text-slate-400 flex items-center justify-end">
-              <RupeeSymbol className="w-2.5 h-2.5 mr-0.5 inline-block" />499
-            </span>
-            <span className="text-sm font-black text-sky-700 font-mono flex items-center justify-end">
-              <RupeeSymbol className="w-3.5 h-3.5 mr-0.5 inline-block" />99
-            </span>
-          </div>
-
           <button
             onClick={onOpenBooking}
             className="bg-gradient-to-r from-sky-500 via-sky-600 to-blue-600 hover:from-sky-400 hover:to-blue-500 text-white font-black text-xs sm:text-sm px-5 py-2.5 rounded-xl shadow-md shadow-sky-500/25 active:scale-95 transition-all flex items-center gap-1.5"

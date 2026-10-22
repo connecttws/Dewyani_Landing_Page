@@ -2,7 +2,6 @@
 
 import React from 'react';
 import { Sparkles, Calendar, Clock, ChevronRight } from 'lucide-react';
-import { RupeeSymbol } from './RupeeSymbol';
 
 interface NavbarProps {
   onOpenBooking: () => void;
@@ -102,9 +101,6 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking }) => {
           >
             <Sparkles className="w-4 h-4 text-amber-200 group-hover:rotate-12 transition-transform" />
             <span>Book Your Seat</span>
-            <span className="hidden sm:inline-flex items-center gap-0.5 bg-white/20 text-[11px] px-1.5 py-0.5 rounded font-mono text-white">
-              <RupeeSymbol className="w-3 h-3 inline-block" />99
-            </span>
           </button>
         </div>
       </div>

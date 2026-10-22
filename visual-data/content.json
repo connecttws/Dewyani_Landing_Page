@@ -12,8 +12,7 @@
       "tagline": "Real Food. Sustainable Habits. Better Health."
     },
     "cta": {
-      "text": "Book Your Seat",
-      "price": 99
+      "text": "Book Your Seat"
     }
   },
   "hero": {
@@ -31,9 +30,7 @@
     ],
     "cta": {
       "text": "Book Your Seat Now",
-      "subtext": "Limited to First 50 Attendees",
-      "price": 99,
-      "originalPrice": 1499
+      "subtext": "Limited to First 50 Attendees"
     },
     "subheading": "Build healthier everyday habits with personalised nutrition and lifestyle guidance designed around your individual needs, food preferences, and routine."
   },

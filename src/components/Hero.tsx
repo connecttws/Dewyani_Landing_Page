@@ -2,7 +2,6 @@
 
 import React, { useState } from 'react';
 import { Play, Pause, Volume2, VolumeX, Shield, Clock, Users, ArrowRight } from 'lucide-react';
-import { RupeeSymbol } from './RupeeSymbol';
 
 interface HeroProps {
   onOpenBooking: () => void;
@@ -102,12 +101,10 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
           </button>
 
           {/* Micro details */}
-          <div className="mt-3 flex items-center justify-center gap-4 text-xs text-slate-500 font-medium">
+          <div className="mt-3 flex items-center justify-center gap-3 sm:gap-4 text-xs text-slate-500 font-medium">
             <span className="flex items-center gap-1">
               <Clock className="w-3.5 h-3.5 text-sky-600" /> Sunday, 7:00 PM IST
             </span>
-            <span>•</span>
-            <span>Fee: <RupeeSymbol className="w-3 h-3 inline-block" />99 Only</span>
             <span>•</span>
             <span className="flex items-center gap-1">
               <Shield className="w-3.5 h-3.5 text-emerald-600" /> 100% Satisfaction Guarantee

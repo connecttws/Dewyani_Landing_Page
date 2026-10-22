@@ -2,7 +2,6 @@
 
 import React, { useState } from 'react';
 import { X, Sparkles, Calendar, Clock, ShieldCheck, CheckCircle2, Download } from 'lucide-react';
-import { RupeeSymbol } from './RupeeSymbol';
 import { validateBookingForm, generateBookingPass, BookingFormData } from '../utils/metabolicCalculators';
 
 interface BookingModalProps {
@@ -208,7 +207,7 @@ END:VCALENDAR`;
                     <span>Securing Your Seat...</span>
                   ) : (
                     <span className="flex items-center justify-center gap-1">
-                      Confirm Seat • Special Fee <RupeeSymbol className="w-4 h-4 inline-block" />99
+                      Confirm Your Seat
                     </span>
                   )}
                 </button>
