@@ -71,6 +71,12 @@ export const Header: React.FC<HeaderProps> = ({ onOpenBooking }) => {
           <a href="#pillars" className="hover:text-sky-600 transition-colors">
             5 Pillars
           </a>
+          <a href="#results" className="hover:text-sky-600 transition-colors">
+            Results
+          </a>
+          <a href="#reviews" className="hover:text-sky-600 transition-colors">
+            Reviews
+          </a>
           <a href="#doctor" className="hover:text-sky-600 transition-colors">
             Meet Dt. Dewyani
           </a>

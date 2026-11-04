@@ -1,14 +1,6 @@
 import type { Metadata } from "next";
-import { Plus_Jakarta_Sans } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
-
-const plusJakartaSans = Plus_Jakarta_Sans({
-  variable: "--font-plus-jakarta-sans",
-  subsets: ["latin"],
-  display: "swap",
-  weight: ["300", "400", "500", "600", "700", "800"],
-});
 
 export const metadata: Metadata = {
   title: "Metabolic Academy — Mastering Diabetes with Dt. Devyani Arbat",
@@ -36,8 +28,16 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${plusJakartaSans.variable} scroll-smooth antialiased`}
+      className="scroll-smooth antialiased"
     >
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet"
+        />
+      </head>
       <body className="font-sans antialiased bg-slate-50 text-slate-900 selection:bg-sky-500 selection:text-white min-h-screen flex flex-col">
         {children}
         <Script

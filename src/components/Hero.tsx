@@ -14,9 +14,9 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
   return (
     <section className="pt-8 pb-14 sm:pt-12 sm:pb-20 bg-gradient-to-b from-sky-50/60 via-white to-slate-50">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
-        {/* Main Headline - Exact from PDF Page 1 */}
+        {/* Main Headline - Updated to Live Diabetes & Metabolic Health Webinar */}
         <h1 className="text-3xl sm:text-5xl font-extrabold text-slate-900 tracking-tight leading-[1.2]">
-          Mastering Diabetes: A Practical Guide to Healthy Living
+          Live Diabetes & Metabolic Health Webinar: Learn to Manage Blood Sugar Through Nutrition & Lifestyle
         </h1>
 
         {/* [VSL VIDEO] - Centerpiece Video Player */}
@@ -51,7 +51,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
                 <button
                   onClick={() => setIsPlaying(true)}
                   aria-label="Play webinar video"
-                  className="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-sky-600 hover:bg-sky-500 text-white flex items-center justify-center shadow-2xl shadow-sky-600/50 hover:scale-105 active:scale-95 transition-all"
+                  className="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-sky-600 hover:bg-sky-500 text-white flex items-center justify-center shadow-2xl shadow-sky-600/50 hover:scale-105 active:scale-95 transition-all cursor-pointer"
                 >
                   <Play className="w-8 h-8 ml-1 fill-current" />
                 </button>
@@ -68,13 +68,13 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
                 <div className="mt-3 flex items-center justify-between pt-2 border-t border-slate-800">
                   <button
                     onClick={() => setIsPlaying(false)}
-                    className="text-xs text-slate-400 hover:text-white flex items-center gap-1"
+                    className="text-xs text-slate-400 hover:text-white flex items-center gap-1 cursor-pointer"
                   >
                     <Pause className="w-3.5 h-3.5" /> Pause
                   </button>
                   <button
                     onClick={() => setIsMuted(!isMuted)}
-                    className="text-xs text-slate-400 hover:text-white flex items-center gap-1"
+                    className="text-xs text-slate-400 hover:text-white flex items-center gap-1 cursor-pointer"
                   >
                     {isMuted ? <VolumeX className="w-3.5 h-3.5" /> : <Volume2 className="w-3.5 h-3.5" />}
                     {isMuted ? 'Unmute' : 'Mute'}
@@ -94,7 +94,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
         <div className="mt-6 max-w-md mx-auto">
           <button
             onClick={onOpenBooking}
-            className="w-full bg-sky-600 hover:bg-sky-700 text-white font-extrabold text-lg sm:text-xl py-4 px-8 rounded-xl shadow-lg shadow-sky-600/30 hover:shadow-xl transition-all active:scale-98 flex items-center justify-center gap-2"
+            className="w-full bg-sky-600 hover:bg-sky-700 text-white font-extrabold text-lg sm:text-xl py-4 px-8 rounded-xl shadow-lg shadow-sky-600/30 hover:shadow-xl transition-all active:scale-98 flex items-center justify-center gap-2 cursor-pointer"
           >
             <span>Book Your SEAT Now</span>
             <ArrowRight className="w-5 h-5" />

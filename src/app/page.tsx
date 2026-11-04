@@ -8,6 +8,8 @@ import { CurriculumSection } from '@/components/CurriculumSection';
 import { ComplicationsSection } from '@/components/ComplicationsSection';
 import { PillarsSection } from '@/components/PillarsSection';
 import { GuidanceSection } from '@/components/GuidanceSection';
+import { TestimonialsSection } from '@/components/TestimonialsSection';
+import { ReviewsSection } from '@/components/ReviewsSection';
 import { DoctorSection } from '@/components/DoctorSection';
 import { FaqSection } from '@/components/FaqSection';
 import { BookingModal } from '@/components/BookingModal';
@@ -27,20 +29,20 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-white text-slate-900 font-sans selection:bg-sky-500 selection:text-white flex flex-col">
-      {/* 1. Header with exact Logo Card from PDF Page 1 */}
+      {/* 1. Header with brand identity & urgency banner */}
       <Header onOpenBooking={handleOpenBooking} />
 
       <main className="flex-1">
         {/* 2. Hero Section: Headline, [VSL VIDEO], 3 promises, [Book Your SEAT Now] */}
         <Hero onOpenBooking={handleOpenBooking} />
 
-        {/* 3. Section as shown in PDF Page 2 Screenshot (Dark container, 4 cards) */}
+        {/* 3. Section as shown in PDF Page 2 (Dark container, 4 cards) */}
         <StrugglesDarkSection />
 
-        {/* 4. Discover a Smarter Approach to Nutrition & Diabetes Management */}
+        {/* 4. Discover a Smarter Approach: ROOT CAUSES, RESET & RHYTHM */}
         <CurriculumSection onOpenBooking={handleOpenBooking} />
 
-        {/* 5. High Blood Sugar Today Can Affect Your Health Tomorrow. */}
+        {/* 5. High Blood Sugar Today Can Affect Your Health Tomorrow */}
         <ComplicationsSection />
 
         {/* 6. The 5 Pillars of the Metabolic Reset Blueprint */}
@@ -49,14 +51,20 @@ export default function Home() {
         {/* 7. Take Control of Your Daily Habits with the Right Guidance */}
         <GuidanceSection />
 
-        {/* 8. Meet Dt. Dewyani Arbat */}
+        {/* 8. Real People Real Results (6 Frames in 3 - 3 Grid) */}
+        <TestimonialsSection onOpenBooking={handleOpenBooking} />
+
+        {/* 9. Reviews Section (Google Reviews • 5 Stars) */}
+        <ReviewsSection onOpenBooking={handleOpenBooking} />
+
+        {/* 10. Meet Dt. Dewyani Arbat */}
         <DoctorSection onOpenBooking={handleOpenBooking} />
 
-        {/* 9. Frequently Asked Questions */}
+        {/* 11. Frequently Asked Questions */}
         <FaqSection />
       </main>
 
-      {/* 10. Footer */}
+      {/* 12. Footer */}
       <Footer />
 
       {/* Floating Sticky Bar on scroll */}
