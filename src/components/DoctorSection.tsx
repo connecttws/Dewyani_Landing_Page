@@ -17,8 +17,8 @@ export const DoctorSection: React.FC<DoctorSectionProps> = ({ onOpenBooking }) =
             <div className="md:col-span-5 flex flex-col items-center">
               <div className="w-56 h-72 sm:w-64 sm:h-80 rounded-2xl overflow-hidden border-2 border-white shadow-md bg-slate-200">
                 <img
-                  src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=800&q=80"
-                  alt="Dt. Dr. Devyani Arbat"
+                  src="/WhatsApp%20Image%202026-11-18%20at%2010.45.32.jpeg"
+                  alt="Dt. Dewyani Arbat"
                   className="w-full h-full object-cover object-top"
                   loading="lazy"
                 />

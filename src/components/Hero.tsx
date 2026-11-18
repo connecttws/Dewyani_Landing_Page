@@ -1,16 +1,14 @@
 "use client";
 
-import React, { useState } from 'react';
-import { Play, Pause, Volume2, VolumeX, Shield, Clock, Users, ArrowRight } from 'lucide-react';
+import React from 'react';
+import { Shield, Clock, ArrowRight } from 'lucide-react';
+import { WistiaPlayer } from '@/components/WistiaPlayer';
 
 interface HeroProps {
   onOpenBooking: () => void;
 }
 
 export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
-  const [isPlaying, setIsPlaying] = useState<boolean>(false);
-  const [isMuted, setIsMuted] = useState<boolean>(false);
-
   return (
     <section className="pt-8 pb-14 sm:pt-12 sm:pb-20 bg-gradient-to-b from-sky-50/60 via-white to-slate-50">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
@@ -19,70 +17,9 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
           Live Diabetes & Metabolic Health Webinar: Learn to Manage Blood Sugar Through Nutrition & Lifestyle
         </h1>
 
-        {/* [VSL VIDEO] - Centerpiece Video Player */}
-        <div className="mt-8 rounded-2xl overflow-hidden bg-slate-950 border-2 border-slate-200 shadow-xl relative aspect-video group">
-          {/* Video Thumbnail Background */}
-          <div
-            className={`absolute inset-0 bg-cover bg-center transition-opacity duration-500 ${
-              isPlaying ? 'opacity-85' : 'opacity-95'
-            }`}
-            style={{
-              backgroundImage: `url('https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1600&q=80')`,
-            }}
-          >
-            <div className="absolute inset-0 bg-slate-950/40"></div>
-          </div>
-
-          {/* Video Top Banner */}
-          <div className="absolute top-3 left-3 right-3 flex items-center justify-between text-xs text-white z-10">
-            <span className="bg-slate-900/80 backdrop-blur-xs px-2.5 py-1 rounded-md font-semibold border border-slate-700 flex items-center gap-1.5">
-              <span className="w-2 h-2 rounded-full bg-rose-500 animate-pulse"></span>
-              Webinar Preview
-            </span>
-            <span className="bg-slate-900/80 backdrop-blur-xs px-2.5 py-1 rounded-md font-medium text-slate-300 hidden sm:inline-flex items-center gap-1">
-              <Users className="w-3.5 h-3.5 text-sky-400" /> Dt. Devyani Arbat
-            </span>
-          </div>
-
-          {/* Center Play Button */}
-          <div className="relative z-10 h-full flex flex-col items-center justify-center p-4">
-            {!isPlaying ? (
-              <div className="flex flex-col items-center">
-                <button
-                  onClick={() => setIsPlaying(true)}
-                  aria-label="Play webinar video"
-                  className="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-sky-600 hover:bg-sky-500 text-white flex items-center justify-center shadow-2xl shadow-sky-600/50 hover:scale-105 active:scale-95 transition-all cursor-pointer"
-                >
-                  <Play className="w-8 h-8 ml-1 fill-current" />
-                </button>
-                <div className="mt-4 bg-slate-950/85 backdrop-blur-xs py-1.5 px-4 rounded-lg border border-slate-800 text-xs sm:text-sm font-semibold text-white">
-                  Click to Watch Masterclass Introduction
-                </div>
-              </div>
-            ) : (
-              <div className="bg-slate-950/90 p-4 rounded-xl text-white text-xs sm:text-sm max-w-md border border-slate-800">
-                <p className="font-semibold text-sky-400 mb-1">Dt. Devyani Arbat:</p>
-                <p className="text-slate-200">
-                  "Understanding what drives blood sugar and insulin resistance is the first step toward lasting health. In this session, we examine practical, daily nutrition without starvation."
-                </p>
-                <div className="mt-3 flex items-center justify-between pt-2 border-t border-slate-800">
-                  <button
-                    onClick={() => setIsPlaying(false)}
-                    className="text-xs text-slate-400 hover:text-white flex items-center gap-1 cursor-pointer"
-                  >
-                    <Pause className="w-3.5 h-3.5" /> Pause
-                  </button>
-                  <button
-                    onClick={() => setIsMuted(!isMuted)}
-                    className="text-xs text-slate-400 hover:text-white flex items-center gap-1 cursor-pointer"
-                  >
-                    {isMuted ? <VolumeX className="w-3.5 h-3.5" /> : <Volume2 className="w-3.5 h-3.5" />}
-                    {isMuted ? 'Unmute' : 'Mute'}
-                  </button>
-                </div>
-              </div>
-            )}
-          </div>
+        {/* [VSL VIDEO] - Wistia Video Player */}
+        <div className="mt-8">
+          <WistiaPlayer mediaId="hec0u9fos1" />
         </div>
 
         {/* Subtext - Exact bullets from PDF Page 1 */}

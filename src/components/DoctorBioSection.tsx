@@ -20,8 +20,8 @@ export const DoctorBioSection: React.FC<DoctorBioSectionProps> = ({ onOpenBookin
                 
                 <div className="relative w-64 h-80 sm:w-72 sm:h-96 rounded-3xl overflow-hidden border-4 border-white shadow-2xl bg-sky-50">
                   <img
-                    src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=800&q=80"
-                    alt="Dt. Dr. Devyani Arbat, Senior Nutritionist & Metabolic Health Mentor"
+                    src="/WhatsApp%20Image%202026-11-18%20at%2010.45.32.jpeg"
+                    alt="Dt. Dewyani Arbat, Senior Nutritionist & Metabolic Health Mentor"
                     className="w-full h-full object-cover object-top"
                     loading="lazy"
                   />

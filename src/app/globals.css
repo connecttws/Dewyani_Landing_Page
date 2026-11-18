@@ -41,3 +41,16 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #0284C7;
 }
+
+/* Wistia VSL Video Player */
+wistia-player[media-id='hec0u9fos1']:not(:defined) {
+  background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/hec0u9fos1/swatch');
+  display: block;
+  filter: blur(5px);
+  padding-top: 56.25%;
+}
+wistia-player {
+  display: block;
+  width: 100%;
+}
+
