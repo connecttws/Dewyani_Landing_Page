@@ -12,11 +12,11 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
   return (
     <section className="pt-8 pb-14 sm:pt-12 sm:pb-20 bg-gradient-to-b from-sky-50/60 via-white to-slate-50">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
-        {/* Main Headline - H1 */}
+        {/* Main Headline - H1 (Desktop in 2 lines) */}
         <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight leading-[1.2]">
-          Trying Diet &amp; Exercise,
+          Trying Diet &amp; Exercise, But Your Body
           <br className="hidden sm:inline" />
-          {' '}But Your Body Isn’t Responding?
+          {' '}Isn’t Responding?
         </h1>
 
         {/* [VSL VIDEO] - Wistia Video Player */}
