@@ -46,15 +46,14 @@ export const Header: React.FC<HeaderProps> = ({ onOpenBooking }) => {
       </div>
 
       {/* 2. Main Navigation Bar */}
-      <div className="max-w-6xl mx-auto px-3 sm:px-6 py-2.5 sm:py-3.5 flex items-center justify-between gap-2 sm:gap-4">
-        {/* Brand identity - Small, minimal placeholder */}
-        <a href="#" className="flex items-center gap-2 focus:outline-none group shrink-0" aria-label="Metabolic Academy Home">
-          <div className="w-7 h-7 rounded-lg bg-sky-600 group-hover:bg-sky-500 text-white font-bold text-xs flex items-center justify-center transition-colors">
-            MA
-          </div>
-          <span className="font-bold text-sm sm:text-base tracking-tight text-slate-900 group-hover:text-sky-600 transition-colors">
-            Metabolic <span className="text-sky-600">Academy</span>
-          </span>
+      <div className="max-w-6xl mx-auto px-3 sm:px-6 py-2.5 sm:py-3 flex items-center justify-between gap-2 sm:gap-4">
+        {/* Brand identity - Official Blue Logo */}
+        <a href="#" className="flex items-center gap-2 focus:outline-none shrink-0" aria-label="Metabolic Academy Home">
+          <img
+            src="/blue-logo.png"
+            alt="Metabolic Academy Logo"
+            className="h-9 sm:h-11 w-auto object-contain"
+          />
         </a>
 
         {/* Center: Desktop Navigation Anchor Links */}
@@ -71,11 +70,8 @@ export const Header: React.FC<HeaderProps> = ({ onOpenBooking }) => {
           <a href="#pillars" className="hover:text-sky-600 transition-colors">
             5 Pillars
           </a>
-          <a href="#results" className="hover:text-sky-600 transition-colors">
-            Results
-          </a>
-          <a href="#reviews" className="hover:text-sky-600 transition-colors">
-            Reviews
+          <a href="#client-stories" className="hover:text-sky-600 transition-colors">
+            Success Stories
           </a>
           <a href="#doctor" className="hover:text-sky-600 transition-colors">
             Meet Dt. Dewyani

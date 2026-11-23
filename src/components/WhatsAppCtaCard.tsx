@@ -1,14 +1,14 @@
 "use client";
 
 import React from 'react';
-import { ArrowRight, Bell, ShieldCheck, FileText, CheckCircle2, MessageCircle } from 'lucide-react';
+import { ArrowRight, MessageCircle } from 'lucide-react';
 
 interface WhatsAppCtaCardProps {
   whatsappGroupLink?: string;
 }
 
 export const WhatsAppCtaCard: React.FC<WhatsAppCtaCardProps> = ({
-  whatsappGroupLink = "https://chat.whatsapp.com/invite/devyani-diabetes-webinar",
+  whatsappGroupLink = "https://chat.whatsapp.com/InLCf5eWzxM2S5ZgAPFdpq?s=cl&p=i&mlu=4&ilr=4&iam=2",
 }) => {
   return (
     <div className="w-full max-w-3xl mx-auto rounded-3xl bg-gradient-to-br from-emerald-50 via-teal-50/40 to-sky-50 border-2 border-emerald-400/80 p-5 sm:p-8 shadow-xl shadow-emerald-600/10 relative overflow-hidden">
@@ -20,12 +20,11 @@ export const WhatsAppCtaCard: React.FC<WhatsAppCtaCardProps> = ({
         {/* Pulsing Priority Badge */}
         <div className="inline-flex items-center gap-2 bg-emerald-600 text-white px-3.5 py-1.5 rounded-full text-xs font-black uppercase tracking-wider mb-4 shadow-md shadow-emerald-600/30">
           <span className="w-2 h-2 rounded-full bg-emerald-200 animate-ping"></span>
-          <span>Mandatory Step</span>
+          <span>Important Next Step</span>
         </div>
 
         {/* WhatsApp Icon */}
         <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-3xl bg-gradient-to-tr from-emerald-600 to-green-500 text-white flex items-center justify-center shadow-lg shadow-emerald-600/30 mb-4 transform hover:scale-105 transition-transform">
-          {/* WhatsApp SVG Icon */}
           <svg
             className="w-9 h-9 sm:w-11 sm:h-11 fill-current"
             viewBox="0 0 24 24"
@@ -35,14 +34,14 @@ export const WhatsAppCtaCard: React.FC<WhatsAppCtaCardProps> = ({
           </svg>
         </div>
 
-        {/* Heading - Exact User Spec */}
+        {/* Heading */}
         <h2 className="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight">
           Join Our WhatsApp Group!
         </h2>
 
-        {/* Subtitle - Exact User Spec */}
+        {/* Subtitle */}
         <p className="mt-2 text-sm sm:text-base text-slate-700 max-w-xl font-medium leading-relaxed">
-          Join our WhatsApp group to receive webinar reminders, updates, and important joining details so you don't miss the session.
+          Join our official WhatsApp group to receive the latest webinar updates, reminders, and Zoom joining details.
         </p>
 
         {/* Big High-Converting CTA Button */}
@@ -54,33 +53,13 @@ export const WhatsAppCtaCard: React.FC<WhatsAppCtaCardProps> = ({
             className="group relative w-full py-4 px-6 rounded-2xl bg-gradient-to-r from-emerald-600 via-green-600 to-emerald-700 hover:from-emerald-500 hover:to-green-500 text-white font-black text-base sm:text-lg shadow-xl shadow-emerald-600/35 hover:shadow-2xl transition-all active:scale-98 flex items-center justify-center gap-2 cursor-pointer"
           >
             <MessageCircle className="w-5 h-5 fill-current" />
-            <span>Join Official WhatsApp Group</span>
+            <span>Join Our WhatsApp Group!</span>
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
           </a>
         </div>
 
-        {/* Inclusions checklist */}
-        <div className="mt-6 w-full max-w-lg bg-white/80 backdrop-blur-xs rounded-2xl p-4 border border-emerald-200 text-left text-xs sm:text-sm space-y-2">
-          <div className="flex items-start gap-2.5 text-slate-800 font-semibold">
-            <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
-            <span>Private Zoom Link & Password shared 1 hour before session</span>
-          </div>
-          <div className="flex items-start gap-2.5 text-slate-800 font-semibold">
-            <Bell className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
-            <span>15-Minute reminder alert before Dt. Devyani goes live</span>
-          </div>
-          <div className="flex items-start gap-2.5 text-slate-800 font-semibold">
-            <FileText className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
-            <span>Bonus PDF: "Metabolic Food Swaps & Blood Sugar Guide"</span>
-          </div>
-          <div className="flex items-start gap-2.5 text-slate-800 font-semibold">
-            <ShieldCheck className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
-            <span>Admin-only group (No spam, no random forwards)</span>
-          </div>
-        </div>
-
-        <p className="mt-3 text-[11px] text-slate-500 font-medium">
-          🔒 Secure & spam-free community managed by Metabolic Academy.
+        <p className="mt-3 text-xs text-slate-500 font-medium">
+          🔒 Private group • Zero spam • Direct webinar access link
         </p>
       </div>
     </div>

@@ -9,7 +9,7 @@ import { ComplicationsSection } from '@/components/ComplicationsSection';
 import { PillarsSection } from '@/components/PillarsSection';
 import { GuidanceSection } from '@/components/GuidanceSection';
 import { TestimonialsSection } from '@/components/TestimonialsSection';
-import { ReviewsSection } from '@/components/ReviewsSection';
+import { ClientExperiencesSection } from '@/components/ClientExperiencesSection';
 import { DoctorSection } from '@/components/DoctorSection';
 import { FaqSection } from '@/components/FaqSection';
 import { BookingModal } from '@/components/BookingModal';
@@ -51,11 +51,11 @@ export default function Home() {
         {/* 7. Take Control of Your Daily Habits with the Right Guidance */}
         <GuidanceSection />
 
-        {/* 8. Real People Real Results (6 Frames in 3 - 3 Grid) */}
-        <TestimonialsSection onOpenBooking={handleOpenBooking} />
+        {/* 8. Client Experiences & Success Stories (Video Testimonials) */}
+        <ClientExperiencesSection onOpenBooking={handleOpenBooking} />
 
-        {/* 9. Reviews Section (Google Reviews • 5 Stars) */}
-        <ReviewsSection onOpenBooking={handleOpenBooking} />
+        {/* 9. Real People Real Results (6 Frames in 3 - 3 Grid) */}
+        <TestimonialsSection onOpenBooking={handleOpenBooking} />
 
         {/* 10. Meet Dt. Dewyani Arbat */}
         <DoctorSection onOpenBooking={handleOpenBooking} />

@@ -11,27 +11,12 @@ export const Footer: React.FC = () => {
           {/* Brand info */}
           <div className="md:col-span-5 space-y-4">
             <div className="flex items-center gap-3">
-              <div className="relative flex items-center justify-center w-9 h-9 rounded-xl bg-gradient-to-br from-sky-400 to-blue-600 shadow-md">
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2.2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  className="w-5 h-5 text-white"
-                >
-                  <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z" />
-                  <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12" />
-                </svg>
-              </div>
-              <div>
-                <span className="font-extrabold text-white text-base tracking-tight block">
-                  METABOLIC ACADEMY
-                </span>
-                <span className="text-[10px] uppercase tracking-wider text-sky-400 font-semibold">
-                  Personalised Nutrition & Wellness
-                </span>
+              <div className="bg-white rounded-xl p-1.5 shadow-md inline-block">
+                <img
+                  src="/blue-logo.png"
+                  alt="Metabolic Academy Logo"
+                  className="h-9 sm:h-11 w-auto object-contain"
+                />
               </div>
             </div>
 

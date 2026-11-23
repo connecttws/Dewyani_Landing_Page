@@ -43,32 +43,11 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking }) => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
         {/* Brand Logo - Designed per PDF Page 1 */}
         <a href="#" className="flex items-center gap-3 group focus:outline-none focus:ring-2 focus:ring-sky-400 rounded-lg p-1">
-          <div className="relative flex items-center justify-center w-11 h-11 rounded-xl bg-gradient-to-br from-sky-400 via-cyan-500 to-blue-600 shadow-md shadow-sky-500/20 border border-sky-300 group-hover:scale-105 transition-transform">
-            {/* Custom stylized metabolic leaf & wellness icon */}
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2.2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="w-6 h-6 text-white"
-            >
-              <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z" />
-              <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12" />
-            </svg>
-            <div className="absolute -bottom-1 -right-1 w-3.5 h-3.5 bg-amber-400 rounded-full border-2 border-white flex items-center justify-center">
-              <span className="w-1.5 h-1.5 bg-amber-600 rounded-full"></span>
-            </div>
-          </div>
-          <div className="flex flex-col text-left">
-            <span className="font-extrabold text-lg sm:text-xl tracking-tight text-slate-900 group-hover:text-sky-600 transition-colors">
-              METABOLIC ACADEMY
-            </span>
-            <span className="text-[11px] sm:text-xs font-semibold tracking-wider uppercase text-sky-600 -mt-0.5">
-              Personalised Nutrition & Wellness
-            </span>
-          </div>
+          <img
+            src="/blue-logo.png"
+            alt="Metabolic Academy Logo"
+            className="h-10 sm:h-12 w-auto object-contain"
+          />
         </a>
 
         {/* Desktop Navigation Links */}
