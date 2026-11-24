@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useRef, useState } from 'react';
-import { Heart, Activity, Eye, Zap, Bandage, AlertCircle, ChevronLeft, ChevronRight } from 'lucide-react';
+import { Heart, Activity, Eye, Zap, Bandage, Flame, AlertCircle, ChevronLeft, ChevronRight } from 'lucide-react';
 
 const COMPLICATIONS_LIST = [
   {
@@ -43,6 +43,14 @@ const COMPLICATIONS_LIST = [
     iconColor: 'text-emerald-600',
     bgColor: 'bg-emerald-50',
     borderColor: 'border-emerald-100',
+  },
+  {
+    title: 'Metabolic & Hormonal Exhaustion',
+    detail: 'Struggling with stubborn belly fat, uncontrolled blood sugar, hormonal imbalances or low energy?',
+    icon: Flame,
+    iconColor: 'text-purple-600',
+    bgColor: 'bg-purple-50',
+    borderColor: 'border-purple-100',
   },
 ];
 

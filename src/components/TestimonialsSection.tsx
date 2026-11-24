@@ -216,7 +216,7 @@ export const TestimonialsSection: React.FC<TestimonialsSectionProps> = ({ onOpen
         <div className="mt-12 text-center">
           <button
             onClick={onOpenBooking}
-            className="bg-sky-600 hover:bg-sky-700 active:scale-98 text-white font-extrabold text-base sm:text-lg py-4 px-8 rounded-xl shadow-md shadow-sky-600/25 transition-all inline-flex items-center gap-2 cursor-pointer"
+            className="bg-[#0A2540] hover:bg-[#133A5E] active:scale-98 text-white font-extrabold text-base sm:text-lg py-4 px-8 rounded-xl shadow-lg shadow-slate-900/25 transition-all inline-flex items-center gap-2 cursor-pointer"
           >
             <span>Start Your Health Transformation — Book Seat Now</span>
             <ArrowRight className="w-5 h-5" />

@@ -55,7 +55,7 @@ export const DoctorSection: React.FC<DoctorSectionProps> = ({ onOpenBooking }) =
               <div>
                 <button
                   onClick={onOpenBooking}
-                  className="bg-sky-600 hover:bg-sky-700 active:scale-98 text-white font-extrabold text-base py-3.5 px-8 rounded-xl shadow-md transition-all flex items-center gap-2"
+                  className="bg-[#0A2540] hover:bg-[#133A5E] active:scale-98 text-white font-extrabold text-base py-3.5 px-8 rounded-xl shadow-lg shadow-slate-900/25 transition-all flex items-center gap-2 cursor-pointer"
                 >
                   <span>Book Your SEAT Now</span>
                   <ArrowRight className="w-4 h-4" />

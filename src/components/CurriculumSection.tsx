@@ -137,13 +137,13 @@ export const CurriculumSection: React.FC<CurriculumSectionProps> = ({ onOpenBook
           <div className="mt-8 pt-6 border-t border-slate-200 text-center">
             <button
               onClick={onOpenBooking}
-              className="bg-sky-600 hover:bg-sky-700 active:scale-98 text-white font-extrabold text-base sm:text-lg py-4 px-8 rounded-xl shadow-md shadow-sky-600/25 transition-all inline-flex items-center gap-2 cursor-pointer"
+              className="bg-[#0A2540] hover:bg-[#133A5E] active:scale-98 text-white font-extrabold text-base sm:text-lg py-4 px-8 rounded-xl shadow-lg shadow-slate-900/25 transition-all inline-flex items-center gap-2 cursor-pointer"
             >
               <span>Book Your SEAT Now</span>
               <ArrowRight className="w-5 h-5" />
             </button>
-            <p className="text-xs text-slate-500 mt-2 font-medium">
-              Join Dt. Devyani Arbat live this Sunday • Limited seats available
+            <p className="text-xs text-slate-600 mt-2 font-semibold">
+              Join Dt. Devyani Arbat live on 3 December • Limited seats available
             </p>
           </div>
         </div>

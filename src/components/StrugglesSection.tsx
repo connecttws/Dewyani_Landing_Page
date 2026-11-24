@@ -13,7 +13,7 @@ const STRUGGLES = [
     title: 'Blood Sugar Fluctuations',
     description:
       'Finding it difficult to understand what affects your blood sugar levels and how daily food choices play a role?',
-    image: 'https://images.unsplash.com/photo-1628771065518-0d82f1938462?auto=format&fit=crop&w=800&q=80',
+    image: '/blood-count.jpg',
     alt: 'Person checking blood sugar with glucometer next to meal',
     icon: Activity,
     badge: 'Glucose Spikes & Dips',
@@ -26,7 +26,7 @@ const STRUGGLES = [
     title: 'Difficulty Managing Weight',
     description:
       'Trying to manage your weight but struggling to find an approach that fits your lifestyle?',
-    image: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=800&q=80',
+    image: '/belly-fat.avif',
     alt: 'Person measuring waistline with tape measure',
     icon: Scale,
     badge: 'Stubborn Visceral Fat',

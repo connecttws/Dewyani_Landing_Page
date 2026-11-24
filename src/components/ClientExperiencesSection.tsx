@@ -158,7 +158,7 @@ export const ClientExperiencesSection: React.FC<ClientExperiencesSectionProps> =
         <div className="mt-10 sm:mt-12 text-center">
           <button
             onClick={onOpenBooking}
-            className="inline-flex items-center gap-2 bg-sky-600 hover:bg-sky-500 active:scale-95 text-white font-extrabold text-base py-3.5 px-8 rounded-xl shadow-lg shadow-sky-600/30 transition cursor-pointer"
+            className="inline-flex items-center gap-2 bg-[#0A2540] hover:bg-[#133A5E] active:scale-95 text-white font-extrabold text-base py-3.5 px-8 rounded-xl shadow-xl shadow-slate-900/30 transition cursor-pointer border border-sky-400/20"
           >
             <span>Book Your Seat Now</span>
             <ArrowRight className="w-4 h-4" />

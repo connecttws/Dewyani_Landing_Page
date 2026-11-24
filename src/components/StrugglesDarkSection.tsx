@@ -8,15 +8,15 @@ const STRUGGLES_LIST = [
     title: 'Blood Sugar Fluctuations',
     description:
       'Finding it difficult to understand what affects your blood sugar levels and how daily food choices play a role?',
-    image: 'https://images.unsplash.com/photo-1628771065518-0d82f1938462?auto=format&fit=crop&w=800&q=80',
-    alt: 'Blood Sugar Fluctuations and dietary choices',
+    image: '/blood-count.jpg',
+    alt: 'Blood Sugar Fluctuations and dietary choices - blood count monitor',
   },
   {
     title: 'Difficulty Managing Weight',
     description:
       'Trying to manage your weight but struggling to find an approach that fits your lifestyle?',
-    image: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=800&q=80',
-    alt: 'Difficulty Managing Weight and lifestyle balance',
+    image: '/belly-fat.avif',
+    alt: 'Difficulty Managing Weight and lifestyle balance - belly fat management',
   },
   {
     title: 'Confusion About What to Eat',

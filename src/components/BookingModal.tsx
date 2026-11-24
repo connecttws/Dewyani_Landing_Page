@@ -17,7 +17,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({ isOpen, onClose }) =
     fullName: '',
     email: '',
     phone: '',
-    sessionDate: 'Sunday, 7:00 PM - 8:30 PM IST',
+    sessionDate: 'Wednesday, 3 December, 7:00 PM – 8:30 PM IST',
     primaryConcern: 'blood_sugar',
   });
 
@@ -173,9 +173,9 @@ export const BookingModal: React.FC<BookingModalProps> = ({ isOpen, onClose }) =
                 onChange={(e) => setFormData({ ...formData, sessionDate: e.target.value })}
                 className="w-full bg-sky-50/50 border border-sky-200 focus:border-sky-500 rounded-xl py-2.5 px-3.5 text-sm text-slate-900 focus:outline-none"
               >
-                <option value="Upcoming Sunday, 7:00 PM – 8:30 PM IST">Upcoming Sunday, 7:00 PM – 8:30 PM IST (Recommended)</option>
-                <option value="Upcoming Saturday, 11:00 AM – 12:30 PM IST">Upcoming Saturday, 11:00 AM – 12:30 PM IST</option>
-                <option value="Next Sunday, 7:00 PM – 8:30 PM IST">Next Sunday, 7:00 PM – 8:30 PM IST</option>
+                <option value="Wednesday, 3 December, 7:00 PM – 8:30 PM IST">Wednesday, 3 December, 7:00 PM – 8:30 PM IST (Recommended)</option>
+                <option value="Saturday, 6 December, 11:00 AM – 12:30 PM IST">Saturday, 6 December, 11:00 AM – 12:30 PM IST</option>
+                <option value="Sunday, 7 December, 7:00 PM – 8:30 PM IST">Sunday, 7 December, 7:00 PM – 8:30 PM IST</option>
               </select>
             </div>
 
@@ -201,7 +201,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({ isOpen, onClose }) =
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full py-3.5 px-6 rounded-xl bg-gradient-to-r from-sky-500 via-sky-600 to-blue-600 hover:from-sky-400 hover:to-blue-500 text-white font-black text-base shadow-lg shadow-sky-500/25 active:scale-98 transition-all flex items-center justify-center gap-2 cursor-pointer disabled:opacity-75"
+                className="w-full py-3.5 px-6 rounded-xl bg-[#0A2540] hover:bg-[#133A5E] text-white font-black text-base shadow-lg shadow-slate-900/30 active:scale-98 transition-all flex items-center justify-center gap-2 cursor-pointer disabled:opacity-75"
               >
                 {isSubmitting ? (
                   <span className="flex items-center gap-2">
