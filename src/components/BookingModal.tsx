@@ -22,11 +22,12 @@ export const BookingModal: React.FC<BookingModalProps> = ({ isOpen, onClose }) =
   });
 
   const [errors, setErrors] = useState<Record<string, string>>({});
+  const [submitError, setSubmitError] = useState<string>('');
   const [isSubmitting, setIsSubmitting] = useState<boolean>(false);
 
   if (!isOpen) return null;
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     const validation = validateBookingForm(formData);
     if (!validation.valid) {
@@ -35,6 +36,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({ isOpen, onClose }) =
     }
 
     setErrors({});
+    setSubmitError('');
     setIsSubmitting(true);
 
     const pass = generateBookingPass(formData.fullName, formData.sessionDate);
@@ -54,8 +56,27 @@ export const BookingModal: React.FC<BookingModalProps> = ({ isOpen, onClose }) =
       );
     } catch (_) {}
 
-    // Brief delay to allow CRM lead tracker event listener to harvest and dispatch
-    setTimeout(() => {
+    try {
+      const [res] = await Promise.all([
+        fetch('/api/contact', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            ...formData,
+            ticketId: pass.ticketId,
+          }),
+        }),
+        // Minimum delay to allow CRM lead tracker event listener to harvest and dispatch
+        new Promise((resolve) => setTimeout(resolve, 450)),
+      ]);
+
+      const data = await res.json();
+      if (!res.ok) {
+        setSubmitError(data.error || 'Failed to reserve your seat. Please try again.');
+        setIsSubmitting(false);
+        return;
+      }
+
       onClose();
       const params = new URLSearchParams({
         name: formData.fullName,
@@ -64,7 +85,10 @@ export const BookingModal: React.FC<BookingModalProps> = ({ isOpen, onClose }) =
         slot: formData.sessionDate,
       });
       router.push(`/thank-you?${params.toString()}`);
-    }, 450);
+    } catch (_) {
+      setSubmitError('Network error. Please check your connection and try again.');
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -173,9 +197,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({ isOpen, onClose }) =
                 onChange={(e) => setFormData({ ...formData, sessionDate: e.target.value })}
                 className="w-full bg-sky-50/50 border border-sky-200 focus:border-sky-500 rounded-xl py-2.5 px-3.5 text-sm text-slate-900 focus:outline-none"
               >
-                <option value="Wednesday, 3 December, 7:00 PM – 8:30 PM IST">Wednesday, 3 December, 7:00 PM – 8:30 PM IST (Recommended)</option>
-                <option value="Saturday, 6 December, 11:00 AM – 12:30 PM IST">Saturday, 6 December, 11:00 AM – 12:30 PM IST</option>
-                <option value="Sunday, 7 December, 7:00 PM – 8:30 PM IST">Sunday, 7 December, 7:00 PM – 8:30 PM IST</option>
+                <option value="Wednesday, 3 December, 7:00 PM – 8:30 PM IST">Wednesday, 3 December, 7:00 PM – 8:30 PM IST</option>
               </select>
             </div>
 
@@ -195,6 +217,12 @@ export const BookingModal: React.FC<BookingModalProps> = ({ isOpen, onClose }) =
                 <option value="preventive">Preventive Health (Family History of Diabetes)</option>
               </select>
             </div>
+
+            {submitError && (
+              <div className="p-3 rounded-xl bg-rose-50 border border-rose-200 text-xs font-semibold text-rose-700">
+                {submitError}
+              </div>
+            )}
 
             {/* Submit Button */}
             <div className="pt-3">
