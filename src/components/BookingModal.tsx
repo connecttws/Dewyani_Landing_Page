@@ -179,7 +179,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({ isOpen, onClose }) =
                   name="phone"
                   id="phone"
                   required
-                  placeholder="+91 98765 43210"
+                  placeholder="98765 43210"
                   value={formData.phone}
                   onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                   className="w-full bg-sky-50/50 border border-sky-200 focus:border-sky-500 rounded-xl py-2.5 px-3.5 text-sm text-slate-900 placeholder-slate-400 focus:outline-none"
