@@ -1,6 +1,7 @@
 "use client";
 
 import React from 'react';
+import Image from 'next/image';
 import { Calendar, Clock, ChevronRight, Sparkles } from 'lucide-react';
 
 interface HeaderProps {
@@ -49,9 +50,13 @@ export const Header: React.FC<HeaderProps> = ({ onOpenBooking }) => {
       <div className="max-w-6xl mx-auto px-3 sm:px-6 py-2.5 sm:py-3 flex items-center justify-between gap-2 sm:gap-4">
         {/* Brand identity - Official Blue Logo */}
         <a href="#" className="flex items-center gap-2 focus:outline-none shrink-0" aria-label="Metabolic Academy Home">
-          <img
+          <Image
             src="/blue-logo.png"
             alt="Metabolic Academy Logo"
+            width={3179}
+            height={2069}
+            priority
+            sizes="(max-width: 640px) 120px, 160px"
             className="h-9 sm:h-11 w-auto object-contain"
           />
         </a>

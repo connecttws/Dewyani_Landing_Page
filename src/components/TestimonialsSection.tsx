@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useRef, useState } from 'react';
+import Image from 'next/image';
 import { ShieldCheck, ArrowRight, CheckCircle2, Star, ChevronLeft, ChevronRight, X, ZoomIn } from 'lucide-react';
 
 interface TestimonialsSectionProps {
@@ -15,6 +16,8 @@ const REAL_TRANSFORMATIONS = [
     rating: 5,
     tag: 'Personalized Diet & Workout Guidance',
     image: '/transformation-1.jpeg',
+    width: 1080,
+    height: 912,
     alt: 'Dr. Renuka Pawar transformation review for Dt. Dewyani Arbat',
     summary: 'Ma’am provides personalized diet plan and explains scientifically... clears all doubts.',
   },
@@ -25,6 +28,8 @@ const REAL_TRANSFORMATIONS = [
     rating: 5,
     tag: 'Scientific Approach to Training & Diet',
     image: '/transformation-2.jpeg',
+    width: 1073,
+    height: 1364,
     alt: 'Sameer Khose body transformation review for Dt. Dewyani Arbat',
     summary: 'Nutritionist gives you a holistic view of how our body functions... serious about health and fitness.',
   },
@@ -35,6 +40,8 @@ const REAL_TRANSFORMATIONS = [
     rating: 5,
     tag: 'Customizable Diet & Certified Nutritionist',
     image: '/transformation-3.jpeg',
+    width: 1080,
+    height: 1167,
     alt: 'Rajesh Sarap review for Dt. Dewyani Arbat',
     summary: 'Diet plan and body exercise is customizable... Devyani mam is a certified nutritionist and inspiration.',
   },
@@ -45,6 +52,8 @@ const REAL_TRANSFORMATIONS = [
     rating: 5,
     tag: 'Achieved Fitness Goal with Proper Nutrition',
     image: '/transformation-4.jpeg',
+    width: 1080,
+    height: 1006,
     alt: 'Samiksha Shelke transformation review for Dt. Dewyani Arbat',
     summary: 'Special thanks to Devyani Mam, she always motivates & guides with proper nutrition & diet plan.',
   },
@@ -55,6 +64,8 @@ const REAL_TRANSFORMATIONS = [
     rating: 5,
     tag: 'Result-Driven & Scientific Diet Plan',
     image: '/transformation-5.jpeg',
+    width: 1080,
+    height: 716,
     alt: 'Jyoti Vinchankar review for Dt. Dewyani Arbat',
     summary: 'Diet plan given by Dt. Dewyani is result-driven and scientific... amazing place.',
   },
@@ -169,11 +180,13 @@ export const TestimonialsSection: React.FC<TestimonialsSectionProps> = ({ onOpen
                 onClick={() => setSelectedImage(item.image)}
                 className="relative rounded-2xl overflow-hidden border border-slate-800 bg-[#1e1e1e] cursor-pointer group/img shadow-inner"
               >
-                <img
+                <Image
                   src={item.image}
                   alt={item.alt}
+                  width={item.width}
+                  height={item.height}
+                  sizes="(max-width: 768px) 85vw, (max-width: 1024px) 45vw, 340px"
                   className="w-full h-auto object-contain transition-transform duration-300 group-hover/img:scale-[1.02]"
-                  loading="lazy"
                 />
                 <div className="absolute inset-0 bg-slate-950/20 opacity-0 group-hover/img:opacity-100 transition-opacity flex items-center justify-center">
                   <span className="bg-slate-900/90 text-white text-xs font-bold px-3 py-1.5 rounded-full flex items-center gap-1.5 shadow-lg border border-slate-700">
@@ -242,9 +255,12 @@ export const TestimonialsSection: React.FC<TestimonialsSectionProps> = ({ onOpen
               <X className="w-5 h-5" />
             </button>
             <div className="max-h-[85vh] overflow-y-auto rounded-2xl">
-              <img
+              <Image
                 src={selectedImage}
                 alt="Full Transformation Screenshot"
+                width={1080}
+                height={1364}
+                sizes="90vw"
                 className="w-full h-auto object-contain mx-auto rounded-xl"
               />
             </div>

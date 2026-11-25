@@ -1,6 +1,7 @@
 "use client";
 
 import React from 'react';
+import Image from 'next/image';
 import { ShieldCheck, Mail } from 'lucide-react';
 
 export const Footer: React.FC = () => {
@@ -12,9 +13,12 @@ export const Footer: React.FC = () => {
           <div className="md:col-span-5 space-y-4">
             <div className="flex items-center gap-3">
               <div className="bg-white rounded-xl p-1.5 shadow-md inline-block">
-                <img
+                <Image
                   src="/blue-logo.png"
                   alt="Metabolic Academy Logo"
+                  width={3179}
+                  height={2069}
+                  sizes="(max-width: 640px) 120px, 160px"
                   className="h-9 sm:h-11 w-auto object-contain"
                 />
               </div>

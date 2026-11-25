@@ -1,6 +1,7 @@
 "use client";
 
 import React from 'react';
+import Image from 'next/image';
 import { ArrowRight, Award } from 'lucide-react';
 
 interface DoctorSectionProps {
@@ -15,12 +16,14 @@ export const DoctorSection: React.FC<DoctorSectionProps> = ({ onOpenBooking }) =
           <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
             {/* Doctor Photo */}
             <div className="md:col-span-5 flex flex-col items-center">
-              <div className="w-56 h-72 sm:w-64 sm:h-80 rounded-2xl overflow-hidden border-2 border-white shadow-md bg-slate-200">
-                <img
-                  src="/WhatsApp%20Image%202026-11-18%20at%2010.45.32.jpeg"
+              <div className="relative w-56 h-72 sm:w-64 sm:h-80 rounded-2xl overflow-hidden border-2 border-white shadow-md bg-slate-200">
+                <Image
+                  src="/dewyani-meet.jpeg"
                   alt="Dt. Dewyani Arbat"
-                  className="w-full h-full object-cover object-top"
-                  loading="lazy"
+                  fill
+                  priority
+                  sizes="(max-width: 640px) 224px, 256px"
+                  className="object-cover object-top"
                 />
               </div>
               <div className="mt-3 flex items-center gap-1.5 text-xs font-bold text-slate-700 bg-white px-3 py-1 rounded-full border border-slate-200 shadow-2xs">

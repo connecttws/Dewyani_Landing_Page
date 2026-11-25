@@ -3,6 +3,7 @@
 import React, { Suspense, useEffect, useState } from 'react';
 import { useSearchParams } from 'next/navigation';
 import Link from 'next/link';
+import Image from 'next/image';
 import {
   CheckCircle2,
   ArrowLeft,
@@ -42,9 +43,13 @@ function ThankYouContent() {
       <header className="sticky top-0 z-40 w-full bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-xs">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between">
           <Link href="/" className="flex items-center gap-2 group">
-            <img
+            <Image
               src="/blue-logo.png"
               alt="Metabolic Academy Logo"
+              width={3179}
+              height={2069}
+              priority
+              sizes="(max-width: 640px) 120px, 160px"
               className="h-9 sm:h-11 w-auto object-contain"
             />
           </Link>

@@ -1,6 +1,7 @@
 "use client";
 
 import React from 'react';
+import Image from 'next/image';
 import { Award, ShieldCheck, Sparkles, ArrowRight, Quote } from 'lucide-react';
 
 interface DoctorBioSectionProps {
@@ -19,11 +20,13 @@ export const DoctorBioSection: React.FC<DoctorBioSectionProps> = ({ onOpenBookin
                 <div className="absolute -inset-2 bg-gradient-to-r from-sky-400 via-cyan-400 to-blue-500 rounded-3xl blur-lg opacity-30 group-hover:opacity-50 transition duration-500"></div>
                 
                 <div className="relative w-64 h-80 sm:w-72 sm:h-96 rounded-3xl overflow-hidden border-4 border-white shadow-2xl bg-sky-50">
-                  <img
-                    src="/WhatsApp%20Image%202026-11-18%20at%2010.45.32.jpeg"
+                  <Image
+                    src="/dewyani-meet.jpeg"
                     alt="Dt. Dewyani Arbat, Senior Nutritionist & Metabolic Health Mentor"
-                    className="w-full h-full object-cover object-top"
-                    loading="lazy"
+                    fill
+                    priority
+                    sizes="(max-width: 640px) 256px, 288px"
+                    className="object-cover object-top"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent"></div>
 

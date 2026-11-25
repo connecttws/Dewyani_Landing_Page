@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useRef, useState } from 'react';
+import Image from 'next/image';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 const STRUGGLES_LIST = [
@@ -108,12 +109,13 @@ export const StrugglesDarkSection: React.FC = () => {
               className="snap-center shrink-0 w-[85vw] sm:w-[380px] md:w-auto bg-[#161b22] border border-slate-800 rounded-xl overflow-hidden shadow-lg transition-transform hover:-translate-y-1 duration-300 flex flex-col"
             >
               {/* Card Image */}
-              <div className="h-56 sm:h-64 w-full overflow-hidden bg-slate-900">
-                <img
+              <div className="relative h-56 sm:h-64 w-full overflow-hidden bg-slate-900">
+                <Image
                   src={item.image}
                   alt={item.alt}
-                  className="w-full h-full object-cover"
-                  loading="lazy"
+                  fill
+                  sizes="(max-width: 768px) 85vw, 480px"
+                  className="object-cover"
                 />
               </div>
 
